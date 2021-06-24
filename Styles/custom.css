@@ -13,6 +13,7 @@
 body{
     font-family: main;
     color: #1F2937;
+    scroll-behavior: ;
 }
 
 .center{
@@ -31,6 +32,7 @@ body{
 .hover:hover{
     background-color: #EF4444 ;
     text-decoration-color: #EF4444 ;
+    color: azure;
 }
 
 .wrapper{

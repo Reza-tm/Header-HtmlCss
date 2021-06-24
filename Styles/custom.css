@@ -1,0 +1,39 @@
+@font-face{
+    src: url(../Fonts/A\ Negaar\ Regular.ttf);
+    font-family: main;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: #10B981 ;
+}
+
+body{
+    font-family: main;
+    scrollbar-color: #10B981 ;
+}
+
+.btn{
+    padding:5px 20px;
+    border-radius: 10px ;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.hover:hover{
+    background-color: #6EE7B7 ;
+    text-decoration-color: #6EE7B7 ;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.green {
+    color: #10B981 ;
+}
+

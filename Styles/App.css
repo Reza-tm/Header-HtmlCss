@@ -21,7 +21,7 @@
 }
 
 .header-title::before{
-    background: #34D399;
+    background: #EF4444;
     width: 95vw;
     left: 50%;
     transform: translateX(-50%);
@@ -54,7 +54,8 @@
     margin: 50px 0;
     height: 600px;
     width: 100%;
-    background: url(../Images/3.png);
+    background: url(../Images/2.jpg);
+    /* backdrop-filter: blur( 20.0px ); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -62,6 +63,7 @@
 }
 
 .header-image-text{
+    color: #fff;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -71,8 +73,10 @@
     text-align: center;
     border-radius: 30px;
     white-space: nowrap;
-    background: rgba( 255, 255, 255, 0.55 );
+    background: rgba( 31, 41, 55, 0.55 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

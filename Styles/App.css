@@ -9,6 +9,11 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    
+}
+
+.header-title h1 {
+    transition: text-shadow 500ms;
 }
 
 .header-title::after,
@@ -51,54 +56,7 @@
     text-decoration: overline;
 }
 
-.header-img{
-    margin: 50px 0;
-    height: 600px;
-    width: 100%;
-    background: url(../Images/2.jpg);
-    /* backdrop-filter: blur( 20.0px ); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-}
 
-.header-image-text{
-    color: #fff;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    border-radius: 30px;
-    white-space: nowrap;
-    background: rgba( 31, 41, 55, 0.55 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 20.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.header-image-text h1 {
-    padding: 90px 10vw;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-.header-image-text h1::before {
-    content: open-quote ' ';
-    color: #EF4444 ;
-}
-
-.header-image-text h1::after {
-    content:' ' close-quote;
-    color: #EF4444;
-
-}
 
 .about-us{
     position: relative;
@@ -227,3 +185,58 @@
     color: #1F2937;
 }
 
+.header-img{
+    position: relative;
+}
+
+.img{
+    margin: 50px 0;
+    height: 600px;
+    width: 100%;
+    background: url(../Images/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    filter: blur(.9px);
+}
+
+.header-image-text{
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    cursor: default;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    white-space: nowrap;
+    background: rgba( 31, 41, 55, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+}
+
+.header-image-text h1 {
+    padding: 90px 10vw;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    backdrop-filter: blur( 0px );
+}
+
+
+.header-image-text h1::before {
+    content: open-quote ' ';
+    color: #EF4444 ;
+}
+
+.header-image-text h1::after {
+    content:' ' close-quote;
+    color: #EF4444;
+
+}

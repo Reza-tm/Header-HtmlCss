@@ -13,7 +13,7 @@
 body{
     font-family: main;
     color: #1F2937;
-    scroll-behavior: ;
+    scroll-behavior: smooth;
 }
 
 .center{

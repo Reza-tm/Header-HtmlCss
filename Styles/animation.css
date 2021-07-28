@@ -1,0 +1,11 @@
+.title-ani:hover{
+    animation: ani 2s ease infinite;
+    text-shadow: 0 0 50px #EF4444 ;
+}
+
+
+@keyframes ani {
+    0%   { color: #1F2937; }
+    50%  { color: rgb(180, 180, 180);}
+    100% { color: #1F2937;}
+}

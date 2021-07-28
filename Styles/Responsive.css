@@ -1,0 +1,45 @@
+@media all and (min-width: 576px) {
+  .fa-bars {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .fa-bars {
+    display: block;
+    color: #ef4444;
+  }
+  .header-list-items {
+    margin-top: 50px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .header-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .change {
+    display: flex;
+    margin-top: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    margin: 30px 0;
+  }
+
+  .header-image-text {
+    white-space: normal;
+  }
+
+  .header-image-text h1 {
+    padding: 9vh 5vw;
+    font-size: 1.6em;
+  }
+}

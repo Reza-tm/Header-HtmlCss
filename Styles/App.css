@@ -1,0 +1,250 @@
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-title h1 {
+  transition: text-shadow 500ms;
+}
+
+.header-title::after,
+.header-title::before {
+  content: "";
+  height: 20%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-title::before {
+  background: #ef4444;
+  width: 95vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.header-title::after {
+  height: 100%;
+  background: white;
+  left: -1em;
+  right: -1em;
+  z-index: -1;
+}
+
+.header-list {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+  max-width: 900px;
+}
+
+.header-list-items {
+  list-style: none;
+  text-decoration: overline;
+}
+
+.about-us {
+  position: relative;
+}
+
+.about-us::after {
+  content: "به زودی ";
+  position: absolute;
+  transform: scale(0);
+  bottom: 110%;
+  right: 2%;
+  font-size: 0.725em;
+  transition: transform 150ms;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.about-us:hover::after {
+  transform: scale(1);
+  color: #1f2937;
+}
+
+.services {
+  position: relative;
+}
+
+.services::after {
+  content: "به زودی ";
+  position: absolute;
+  transform: scale(0);
+  bottom: 110%;
+  right: 15%;
+  font-size: 0.725em;
+  transition: transform 150ms;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.services:hover::after {
+  transform: scale(1);
+  color: #1f2937;
+}
+
+.home {
+  position: relative;
+}
+
+.home::after {
+  content: "به زودی ";
+  position: absolute;
+  transform: scale(0);
+  bottom: 110%;
+  right: 0;
+  font-size: 0.725em;
+  transition: transform 150ms;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.home:hover::after {
+  transform: scale(1);
+  color: #1f2937;
+}
+
+.product {
+  position: relative;
+}
+
+.product::after {
+  content: "به زودی ";
+  position: absolute;
+  transform: scale(0);
+  bottom: 110%;
+  right: 22%;
+  font-size: 0.725em;
+  transition: transform 150ms;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.product:hover::after {
+  transform: scale(1);
+  color: #1f2937;
+}
+
+.articles {
+  position: relative;
+}
+
+.articles::after {
+  content: "به زودی ";
+  position: absolute;
+  transform: scale(0);
+  bottom: 110%;
+  right: 25%;
+  font-size: 0.725em;
+  transition: transform 150ms;
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.articles:hover::after {
+  transform: scale(1);
+  color: #1f2937;
+}
+
+.header-img {
+  position: relative;
+}
+
+.img {
+  margin: 50px 0;
+  height: 600px;
+  width: 100%;
+  background: url(../Images/2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  filter: blur(0.9px);
+}
+
+.header-image-text {
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  cursor: default;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  white-space: nowrap;
+  background: rgba(31, 41, 55, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.header-image-text h1 {
+  padding: 90px 10vw;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  backdrop-filter: blur(0px);
+}
+
+.header-image-text h1::before {
+  content: open-quote " ";
+  color: #ef4444;
+}
+
+.header-image-text h1::after {
+  content: " " close-quote;
+  color: #ef4444;
+}
+
+/* ------ hamburger */
+
+.hamburger-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
